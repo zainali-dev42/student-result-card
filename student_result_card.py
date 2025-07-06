@@ -55,22 +55,24 @@ def assign_grade(percentage):
 
 # Function to print a nicely formatted report card
 def print_result_card(name, roll_no, PF, EN, ICT, CVC, PSY, ISL, total, average, percentage, grade):
-    print("\n|======STUDENT RESULT CARD======|\n")
+    print("\n|===============STUDENT RESULT CARD===============|")     
     print("Name                                :", name)
     print("Roll no                             :", roll_no)
-    print("_________________________________")
+    print("_____________________________________________________ ")
+    print("Subjects                            :","Marks Obtained")
+    print("_____________________________________________________ ")
     print("Programming Fundamentals            :", PF)
     print("English                             :", EN)
     print("Information & Communication Tech    :", ICT)
     print("Civics                              :", CVC)
     print("Psychology                          :", PSY)
     print("Islamiat                            :", ISL)
-    print("_________________________________")
-    print("Total                               :", total)
+    print("_______________________________________________")
+    print("Total Marks                         :", total)
     print("Average                             :", round(average, 2))
     print("Percentage                          :", round(percentage, 2), "%")
     print("Grade                               :", grade)
-    print("|===============================|")
+    print("|==============================================|")
 
 # ====== MAIN PROGRAM ======
 name, roll_no = get_student_info()
